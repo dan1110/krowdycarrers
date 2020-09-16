@@ -1,0 +1,22 @@
+$color-main: #ff8b08;
+$color-pup: #9B51E0;
+$color-blue: #2D9CDB;
+$color-green: #219653;
+$color-red: #FA7B7B;
+
+
+$light-bg: #fefefe;
+$light-color-text: #2B2E4F;
+
+$dark-bg: #0d0d0d;
+$dark-color-text: #ffffff;
+
+
+.light{
+    --main-bg-color: #{$light-bg};
+    --text-color: #{$light-color-text};
+}
+.dark{
+    --main-bg-color: #{$dark-bg};
+    --text-color: #{$dark-color-text};
+}
