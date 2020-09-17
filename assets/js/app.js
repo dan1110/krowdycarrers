@@ -53,10 +53,7 @@ const getCookie = (cname) => {
 const loadTheme = () => {
     let theme = getCookie(themeCookieName)
     console.log(theme);
-    if(theme == "light"){
-
-    }
-    body.classList.add(theme === "" ? themeLight : theme)
+    body.classList.add(theme === "" ? themeDark : theme)
 }
 
 
