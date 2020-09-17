@@ -910,6 +910,8 @@ main .knowdy-careers .knowdy-careers-item__box {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .knowdy-careers .knowdy-careers-item__box .box-center {
@@ -921,7 +923,12 @@ main .knowdy-careers .knowdy-careers-item__box .box-right {
 }
 
 main .knowdy-careers .knowdy-careers-item__box .box-right-last {
-  margin-right: 46px;
+  margin-top: 300px;
+  margin-right: 100px;
+}
+
+main .knowdy-careers .knowdy-careers-item__box .box-left-last {
+  margin-top: 150px;
 }
 
 main .knowdy-careers .knowdy-careers-item__box .knowdy-careers-item-double {
@@ -929,14 +936,17 @@ main .knowdy-careers .knowdy-careers-item__box .knowdy-careers-item-double {
 }
 
 main .knowdy-careers .knowdy-careers-item__box .item-box {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 26%;
+      flex-basis: 26%;
 }
 
 main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 190px;
   position: relative;
 }
@@ -973,6 +983,7 @@ main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top .item-box
 
 main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top .item-box-right {
   position: relative;
+  right: 100px;
 }
 
 main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top .item-box-right .personal {
@@ -1060,15 +1071,15 @@ main .knowdy-careers .knowdy-careers-item__box .img-line {
 }
 
 main .knowdy-careers .knowdy-careers-item__box .line-1 {
-  top: -550px;
+  top: 0px;
   left: -75px;
   width: 35%;
-  height: 600px;
+  height: 650px;
 }
 
 main .knowdy-careers .knowdy-careers-item__box .line-2 {
-  top: -30px;
-  left: 350px;
+  bottom: 60px;
+  left: 300px;
 }
 
 @media (max-width: 600px) {
@@ -1147,6 +1158,43 @@ main .knowdy-careers .knowdy-careers-item__box .line-2 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  main .knowdy-careers__title {
+    font-size: 35px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .box-center {
+    margin-top: 50px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .box-right {
+    margin-top: 50px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .box-right-last {
+    margin-right: 0px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .box-left-last {
+    margin-top: 50px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top .item-box-left {
+    max-width: 200px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top .item-box-left .title h3 {
+    font-size: 18px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top .item-box-right {
+    right: 80px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom h3 {
+    font-size: 30px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom p {
+    font-size: 18px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .img-line {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1211,6 +1259,31 @@ main .knowdy-careers .knowdy-careers-item__box .line-2 {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
+  main .knowdy-careers__title {
+    font-size: 35px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .box-right {
+    margin-top: 0px !important;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .box-left-last {
+    margin-top: 80px !important;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box {
+    -ms-flex-preferred-size: 45% !important;
+        flex-basis: 45% !important;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top .item-box-left {
+    max-width: 250px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom h3 {
+    font-size: 30px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom p {
+    font-size: 18px;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .img-line {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1400px) {
@@ -1221,6 +1294,13 @@ main .knowdy-careers .knowdy-careers-item__box .line-2 {
   main #billbroad .container .billbroad-right {
     -ms-flex-preferred-size: 55%;
         flex-basis: 55%;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-right {
+    right: 60px !important;
+  }
+  main .knowdy-careers .knowdy-careers-item__box .line-2 {
+    bottom: 95px;
+    left: 155px;
   }
 }
 /*# sourceMappingURL=app.css.map */
