@@ -115,6 +115,10 @@ ul {
   padding: 10px;
 }
 
+.hide {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .dropdown-menu {
     max-width: 300px;
@@ -423,6 +427,11 @@ header .nav-pc__menu .nav-right .icon-light {
   margin-right: 50px;
 }
 
+header .nav-pc__menu .nav-right .icon-light .icon-moon {
+  color: #2B2E4F;
+  font-size: 16px;
+}
+
 header .nav-pc__menu .nav-right .btn-header a {
   padding: 8px 52px;
   font-size: 25px;
@@ -465,6 +474,11 @@ header .nav-mobile .nav-right .icon-switch-theme {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .nav-mobile .nav-right .icon-switch-theme .icon-moon {
+  color: #2B2E4F;
+  font-size: 16px;
 }
 
 header .nav-mobile .nav-right .toggle-menu {
@@ -526,6 +540,14 @@ header .nav-mobile .nav-right .toggle-menu .nav-list .btn-join a {
 
 header .nav-mobile .nav-right .toggle-menu .nav-list .btn-join a:hover {
   background: #ff8c08e1;
+}
+
+.light .icon-sun {
+  display: none;
+}
+
+.dark .icon-moon {
+  display: none;
 }
 
 @media (max-width: 768px) {

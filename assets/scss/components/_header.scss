@@ -54,6 +54,10 @@ header {
                 display: flex;
                 .icon-light {
                     margin-right: 50px;
+                    .icon-moon{
+                        color: #2B2E4F;
+                        font-size: 16px;
+                    }
                 }
                 .btn-header {
                     a {
@@ -87,6 +91,10 @@ header {
                 color: var(--text-color);
                 display: flex;
                 align-items: center;
+                .icon-moon{
+                    color: #2B2E4F;
+                    font-size: 16px;
+                }
             }
             .toggle-menu {
                 display: flex;
@@ -137,6 +145,16 @@ header {
                 }
             }
         }
+    }
+}
+.light{
+    .icon-sun{
+        display: none;
+    }
+}
+.dark{
+    .icon-moon{
+        display: none;
     }
 }
 @media(max-width: 768px){
