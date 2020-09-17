@@ -39,7 +39,7 @@
                             font-size: 16px;
                             line-height: 19px;
                         }
-                        img{
+                        img {
                             width: 100%;
                         }
                     }
@@ -81,33 +81,29 @@
             // margin-left: 32px;
             // margin-right: 32px;
             &__title {
-                font-size: 35px;
-    
+                font-size: 28px;
             }
             .knowdy-careers-item {
-                
                 &__box {
-                    
-                    .box-center{
+                    .box-center {
                         margin-top: 50px;
                     }
-                    .box-right{
+                    .box-right {
                         margin-top: 50px;
                     }
-                    .box-right-last{
+                    .box-right-last {
                         margin-right: 0px;
                     }
-                    .box-left-last{
+                    .box-left-last {
                         margin-top: 50px;
                     }
                     .item-box {
                         flex-basis: 100%;
                         .item-box-top {
-    
                             .item-box-left {
                                 max-width: 200px;
-                                .title{
-                                    h3{
+                                .title {
+                                    h3 {
                                         font-size: 18px;
                                     }
                                 }
@@ -115,7 +111,6 @@
                             .item-box-right {
                                 right: 80px;
                             }
-                            
                         }
                         .item-box-bottom {
                             h3 {
@@ -126,19 +121,83 @@
                             }
                         }
                     }
-                    .img-line{
+                    .img-line {
                         display: none;
                     }
                 }
             }
         }
+        .blog {
+            margin-top: 100px;
+            .blog-krowdy {
+                &__item {
+                    flex-wrap: wrap;
+                    padding-left: 32px;
+                    padding-right: 32px;
+                    .item-left {
+                        flex-basis: 100%;
+                        margin-left: 0;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .item-right {
+                        margin-right: 0;
+                        margin-left: 0;
+                        flex-basis: 100%;
+                        margin-top: 60px;
+                        h3 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .looking-all{
+        margin-top: 80px;
+        &__title{
+            font-size: 28px;
+            margin-bottom: 20px;
+            span {
+                &::after {
+                    height: 5px;
+                }
+            }
+        }
+        &__map{
+            height: 200px;
+            background-size: 100% 200px;
+            .per{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .per-1{
+                bottom: 25%;
+                left: 28%;
+            }
+            .per-2{
+                bottom: 43%;
+                left: 11%;
+            }
+            .per-3{
+                top: 40%;
+                left: 38%;
+            }
+            .per-4{
+                top: 22%;
+                left: 20%;
+            }
+            .per-5{
+                top: 20%;
+                left: 46%;
+            }
+        }
+    }
     }
 }
-// @media(min-width: 600px) and (max-width: 1024px){
-    
-// }
 @media (min-width: 600px) and (max-width: 1024px) {
-    header{
+    header {
         .nav-pc {
             &__menu {
                 .nav-list {
@@ -163,7 +222,7 @@
             }
         }
     }
-    main{
+    main {
         #billbroad {
             .container {
                 .billbroad-left {
@@ -213,7 +272,6 @@
                     }
                     .info-teams {
                         .info-box {
-                            
                             &__item {
                                 flex-basis: 47%;
                             }
@@ -225,25 +283,21 @@
         .knowdy-careers {
             &__title {
                 font-size: 35px;
-    
             }
             .knowdy-careers-item {
-                
                 &__box {
-                    .box-right{
+                    .box-right {
                         margin-top: 0px !important;
                     }
-                    .box-left-last{
+                    .box-left-last {
                         margin-top: 80px !important;
                     }
                     .item-box {
                         flex-basis: 45% !important;
                         .item-box-top {
-    
                             .item-box-left {
                                 max-width: 250px;
                             }
-                            
                         }
                         .item-box-bottom {
                             h3 {
@@ -254,16 +308,84 @@
                             }
                         }
                     }
-                    .img-line{
+                    .img-line {
                         display: none;
                     }
                 }
             }
         }
+        .blog {
+            margin-top: 100px;
+            .blog-krowdy {
+                &__item {
+                    flex-wrap: wrap;
+                    padding-left: 32px;
+                    padding-right: 32px;
+                    .item-left {
+                        flex-basis: 30%;
+                        margin-left: 0;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .item-right {
+                        // margin-right: 0;
+                        margin-left: 50px;
+                        flex-basis: 60%;
+                        margin-top: 60px;
+                        h3 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .looking-all{
+            margin-top: 80px;
+            &__title{
+                font-size: 28px;
+                margin-bottom: 20px;
+                span {
+                    &::after {
+                        height: 5px;
+                    }
+                }
+            }
+            &__map{
+                height: 300px;
+                background-size: 100% 300px;
+                .per{
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                }
+                .per-1{
+                    bottom: 25%;
+                    left: 28%;
+                }
+                .per-2{
+                    bottom: 43%;
+                    left: 11%;
+                }
+                .per-3{
+                    top: 40%;
+                    left: 38%;
+                }
+                .per-4{
+                    top: 22%;
+                    left: 20%;
+                }
+                .per-5{
+                    top: 20%;
+                    left: 46%;
+                }
+            }
+        }
+    
     }
 }
-@media (min-width: 1024px) and (max-width: 1400px){
-    main{
+@media (min-width: 1024px) and (max-width: 1400px) {
+    main {
         #billbroad {
             .container {
                 .billbroad-left {
@@ -276,20 +398,40 @@
         }
         .knowdy-careers {
             .knowdy-careers-item {
-                
                 &__box {
-                    .box-right{
+                    .box-right {
                     }
-                    .box-left-last{
+                    .box-left-last {
                     }
                     .item-box {
-                        .item-box-right{
+                        .item-box-right {
                             right: 60px !important;
                         }
                     }
-                    .line-2{
+                    .line-2 {
                         bottom: 95px;
                         left: 155px;
+                    }
+                }
+            }
+        }
+        .blog {
+            margin-top: 100px;
+            .blog-krowdy {
+                &__item {
+                    flex-wrap: wrap;
+                    padding-left: 32px;
+                    padding-right: 32px;
+                    .item-left {
+                        flex-basis: 30%;
+                        margin-left: 0;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .item-right {
+                        margin-left: 40px;
+                        flex-basis: 60%;
                     }
                 }
             }

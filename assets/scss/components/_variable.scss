@@ -7,16 +7,24 @@ $color-red: #FA7B7B;
 
 $light-bg: #fefefe;
 $light-color-text: #2B2E4F;
+$light-color-title:#2B2E4F;
+$light-color-author:#000000;
 
 $dark-bg: #0d0d0d;
 $dark-color-text: #ffffff;
+$dark-color-title:#FF8B08;
+$dark-color-author:#FF8B08;
 
 
 .light{
     --main-bg-color: #{$light-bg};
     --text-color: #{$light-color-text};
+    --text-title-color: #{$light-color-title};
+    --text-author-color: #{$light-color-author};
 }
 .dark{
     --main-bg-color: #{$dark-bg};
     --text-color: #{$dark-color-text};
+    --text-author-color: #{$dark-color-title};
+    --text-author-color: #{$dark-color-author};
 }

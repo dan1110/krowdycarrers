@@ -1,11 +1,15 @@
 .light {
   --main-bg-color: #fefefe;
   --text-color: #2B2E4F;
+  --text-title-color: #2B2E4F;
+  --text-author-color: #000000;
 }
 
 .dark {
   --main-bg-color: #0d0d0d;
   --text-color: #ffffff;
+  --text-author-color: #FF8B08;
+  --text-author-color: #FF8B08;
 }
 
 * {
@@ -1054,7 +1058,7 @@ main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom h3 {
   font-weight: bold;
   font-size: 32px;
   line-height: 37px;
-  color: #ff8b08;
+  color: var(--text-title-color);
 }
 
 main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom p {
@@ -1078,8 +1082,221 @@ main .knowdy-careers .knowdy-careers-item__box .line-1 {
 }
 
 main .knowdy-careers .knowdy-careers-item__box .line-2 {
-  bottom: 60px;
-  left: 300px;
+  bottom: 85px;
+  left: 220px;
+}
+
+main .blog {
+  margin-top: 200px;
+}
+
+main .blog .blog-krowdy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .blog .blog-krowdy__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .blog .blog-krowdy__item .item-left {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin-left: 100px;
+}
+
+main .blog .blog-krowdy__item .item-left img {
+  width: auto;
+  height: auto;
+}
+
+main .blog .blog-krowdy__item .item-right {
+  margin-top: 100px;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin-left: 90px;
+  position: relative;
+}
+
+main .blog .blog-krowdy__item .item-right h3 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--text-color);
+}
+
+main .blog .blog-krowdy__item .item-right .characters {
+  position: absolute;
+  top: -45px;
+  left: 20px;
+}
+
+main .blog .blog-krowdy__item .item-right .characters img {
+  width: 134px;
+}
+
+main .blog .blog-krowdy__item .item-right .authour h5 {
+  color: var(--text-author-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 16px;
+}
+
+main .blog .blog-krowdy__item .item-right .authour span {
+  font-size: 16px;
+  line-height: 124.4%;
+}
+
+main .looking-all {
+  margin-top: 80px;
+}
+
+main .looking-all__title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 76px;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 100px;
+}
+
+main .looking-all__title span {
+  position: relative;
+  z-index: 2;
+}
+
+main .looking-all__title span::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: -1px;
+  left: -100px;
+  height: 8px;
+  width: 100%;
+  background-color: #ff8b08;
+  -webkit-animation: runspan 0.5s forwards;
+          animation: runspan 0.5s forwards;
+}
+
+main .looking-all__map {
+  height: 500px;
+  background-image: url(.././images/main/billbroad/bg-billbroad.png);
+  background-repeat: no-repeat;
+  background-size: 70% 500px;
+  background-position: center;
+  position: relative;
+}
+
+main .looking-all__map .per {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+main .looking-all__map .per-1 {
+  bottom: 25%;
+  left: 28%;
+}
+
+main .looking-all__map .per-2 {
+  bottom: 43%;
+  left: 31%;
+}
+
+main .looking-all__map .per-3 {
+  top: 25%;
+  left: 28%;
+}
+
+main .looking-all__map .per-4 {
+  top: 22%;
+  left: 20%;
+}
+
+main .looking-all__map .per-5 {
+  top: 20%;
+  left: 46%;
+}
+
+main .doyou-join__title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 76px;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 100px;
+}
+
+main .doyou-join__title span {
+  position: relative;
+  z-index: 2;
+}
+
+main .doyou-join__title span::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: -1px;
+  left: -100px;
+  height: 8px;
+  width: 100%;
+  background-color: #ff8b08;
+  -webkit-animation: runspan 0.5s forwards;
+          animation: runspan 0.5s forwards;
+}
+
+main .doyou-join__title .btn-unete a {
+  color: #fff;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 29px;
+  padding: 5px 43px;
+}
+
+main .doyou-join__bee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 290px;
+}
+
+main .doyou-join__bee .bee-left {
+  position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .doyou-join__bee .bee-left .bee {
+  position: absolute;
+  top: -110px;
+  right: 36px;
+}
+
+main .doyou-join__bee .bee-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  margin-right: 32px;
+}
+
+main .doyou-join__bee .bee-right .bee-up {
+  margin-top: -45px;
+}
+
+main .doyou-join__bee .bee-right .bee-upp {
+  margin-top: -65px;
 }
 
 @media (max-width: 600px) {
@@ -1159,7 +1376,7 @@ main .knowdy-careers .knowdy-careers-item__box .line-2 {
         flex-basis: 100%;
   }
   main .knowdy-careers__title {
-    font-size: 35px;
+    font-size: 28px;
   }
   main .knowdy-careers .knowdy-careers-item__box .box-center {
     margin-top: 50px;
@@ -1194,6 +1411,72 @@ main .knowdy-careers .knowdy-careers-item__box .line-2 {
   }
   main .knowdy-careers .knowdy-careers-item__box .img-line {
     display: none;
+  }
+  main .blog {
+    margin-top: 100px;
+  }
+  main .blog .blog-krowdy__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  main .blog .blog-krowdy__item .item-left {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-left: 0;
+  }
+  main .blog .blog-krowdy__item .item-left img {
+    width: 100%;
+  }
+  main .blog .blog-krowdy__item .item-right {
+    margin-right: 0;
+    margin-left: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 60px;
+  }
+  main .blog .blog-krowdy__item .item-right h3 {
+    font-size: 30px;
+  }
+  main .looking-all {
+    margin-top: 80px;
+  }
+  main .looking-all__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  main .looking-all__title span::after {
+    height: 5px;
+  }
+  main .looking-all__map {
+    height: 200px;
+    background-size: 100% 200px;
+  }
+  main .looking-all__map .per {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+  main .looking-all__map .per-1 {
+    bottom: 25%;
+    left: 28%;
+  }
+  main .looking-all__map .per-2 {
+    bottom: 43%;
+    left: 11%;
+  }
+  main .looking-all__map .per-3 {
+    top: 40%;
+    left: 38%;
+  }
+  main .looking-all__map .per-4 {
+    top: 22%;
+    left: 20%;
+  }
+  main .looking-all__map .per-5 {
+    top: 20%;
+    left: 46%;
   }
 }
 
@@ -1284,6 +1567,71 @@ main .knowdy-careers .knowdy-careers-item__box .line-2 {
   main .knowdy-careers .knowdy-careers-item__box .img-line {
     display: none;
   }
+  main .blog {
+    margin-top: 100px;
+  }
+  main .blog .blog-krowdy__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  main .blog .blog-krowdy__item .item-left {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-left: 0;
+  }
+  main .blog .blog-krowdy__item .item-left img {
+    width: 100%;
+  }
+  main .blog .blog-krowdy__item .item-right {
+    margin-left: 50px;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    margin-top: 60px;
+  }
+  main .blog .blog-krowdy__item .item-right h3 {
+    font-size: 30px;
+  }
+  main .looking-all {
+    margin-top: 80px;
+  }
+  main .looking-all__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  main .looking-all__title span::after {
+    height: 5px;
+  }
+  main .looking-all__map {
+    height: 300px;
+    background-size: 100% 300px;
+  }
+  main .looking-all__map .per {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+  main .looking-all__map .per-1 {
+    bottom: 25%;
+    left: 28%;
+  }
+  main .looking-all__map .per-2 {
+    bottom: 43%;
+    left: 11%;
+  }
+  main .looking-all__map .per-3 {
+    top: 40%;
+    left: 38%;
+  }
+  main .looking-all__map .per-4 {
+    top: 22%;
+    left: 20%;
+  }
+  main .looking-all__map .per-5 {
+    top: 20%;
+    left: 46%;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1400px) {
@@ -1301,6 +1649,28 @@ main .knowdy-careers .knowdy-careers-item__box .line-2 {
   main .knowdy-careers .knowdy-careers-item__box .line-2 {
     bottom: 95px;
     left: 155px;
+  }
+  main .blog {
+    margin-top: 100px;
+  }
+  main .blog .blog-krowdy__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  main .blog .blog-krowdy__item .item-left {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-left: 0;
+  }
+  main .blog .blog-krowdy__item .item-left img {
+    width: 100%;
+  }
+  main .blog .blog-krowdy__item .item-right {
+    margin-left: 40px;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
   }
 }
 /*# sourceMappingURL=app.css.map */

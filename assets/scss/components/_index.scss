@@ -384,7 +384,7 @@ main {
                             font-weight: bold;
                             font-size: 32px;
                             line-height: 37px;
-                            color: $color-main;
+                            color: var(--text-title-color);
                         }
                         p {
                             color: var(--text-color);
@@ -406,8 +406,190 @@ main {
                     height: 650px;
                 }
                 .line-2 {
-                    bottom: 60px;
-                    left: 300px;
+                    // bottom: 60px;
+                    // left: 300px;
+                    bottom: 85px;
+                    left: 220px;
+                }
+            }
+        }
+    }
+
+    // blog
+    .blog {
+        margin-top: 200px;
+        .blog-krowdy {
+            display: flex;
+            &__item {
+                display: flex;
+                .item-left {
+                    flex-basis: 20%;
+                    margin-left: 100px;
+                    img {
+                        width: auto;
+                        height: auto;
+                    }
+                }
+                .item-right {
+                    margin-top: 100px;
+                    flex-basis: 40%;
+                    margin-left: 90px;
+                    position: relative;
+                    h3 {
+                        font-style: italic;
+                        font-weight: 500;
+                        font-size: 45px;
+                        line-height: 53px;
+                        color: var(--text-color);
+                    }
+                    .characters {
+                        position: absolute;
+                        top: -45px;
+                        left: 20px;
+                        img {
+                            width: 134px;
+                        }
+                    }
+                    .authour {
+                        h5 {
+                            color: var(--text-author-color);
+                            font-weight: 500;
+                            font-size: 24px;
+                            line-height: 28px;
+                            margin-top: 16px;
+                        }
+                        span {
+                            font-size: 16px;
+                            line-height: 124.4%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // looking
+    .looking-all {
+        margin-top: 80px;
+        &__title {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 76px;
+            text-align: center;
+            color: var(--text-color);
+            margin-bottom: 100px;
+            span {
+                position: relative;
+                z-index: 2;
+                &::after {
+                    content: "";
+                    z-index: -1;
+                    position: absolute;
+                    bottom: -1px;
+                    left: -100px;
+                    height: 8px;
+                    width: 100%;
+                    background-color: $color-main;
+                    animation: runspan 0.5s forwards;
+                }
+            }
+        }
+        &__map {
+            height: 500px;
+            background-image: url(.././images/main/billbroad/bg-billbroad.png);
+            background-repeat: no-repeat;
+            background-size: 70% 500px;
+            background-position: center;
+            position: relative;
+            .per {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+            }
+            .per-1 {
+                bottom: 25%;
+                left: 28%;
+            }
+            .per-2 {
+                bottom: 43%;
+                left: 31%;
+            }
+            .per-3 {
+                top: 25%;
+                left: 28%;
+            }
+            .per-4 {
+                top: 22%;
+                left: 20%;
+            }
+            .per-5 {
+                top: 20%;
+                left: 46%;
+            }
+        }
+    }
+    .doyou-join {
+        &__title {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 76px;
+            text-align: center;
+            color: var(--text-color);
+            margin-bottom: 100px;
+            span {
+                position: relative;
+                z-index: 2;
+                &::after {
+                    content: "";
+                    z-index: -1;
+                    position: absolute;
+                    bottom: -1px;
+                    left: -100px;
+                    height: 8px;
+                    width: 100%;
+                    background-color: $color-main;
+                    animation: runspan 0.5s forwards;
+                }
+            }
+            .btn-unete {
+                a {
+                    color: #fff;
+                    font-weight: 900;
+                    font-size: 25px;
+                    line-height: 29px;
+                    padding: 5px 43px;
+                }
+            }
+        }
+        &__bee{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 290px;
+            .bee-left{
+                position: relative;
+                flex-basis: 50%;
+                .line-bee{
+                }
+                .bee{
+                    position: absolute;
+                    top: -110px;
+                    right: 36px;
+                }
+            }
+            .bee-right{
+                display: flex;
+                justify-content: space-between;
+                flex-basis: 47%;
+                margin-right: 32px;
+                .bee-right-item{
+                    .icon-bee-small{
+
+                    }
+                }
+                .bee-up{
+                    margin-top: -45px;
+                }
+                .bee-upp{
+                    margin-top: -65px;
                 }
             }
         }
