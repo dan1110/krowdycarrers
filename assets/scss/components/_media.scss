@@ -153,47 +153,88 @@
                 }
             }
         }
-        .looking-all{
-        margin-top: 80px;
-        &__title{
-            font-size: 28px;
-            margin-bottom: 20px;
-            span {
-                &::after {
-                    height: 5px;
+        .looking-all {
+            margin-top: 80px;
+            &__title {
+                font-size: 28px;
+                margin-bottom: 20px;
+                span {
+                    &::after {
+                        height: 5px;
+                    }
+                }
+            }
+            &__map {
+                height: 200px;
+                background-size: 100% 200px;
+                .per {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                }
+                .per-1 {
+                    bottom: 25%;
+                    left: 28%;
+                }
+                .per-2 {
+                    bottom: 43%;
+                    left: 11%;
+                }
+                .per-3 {
+                    top: 40%;
+                    left: 38%;
+                }
+                .per-4 {
+                    top: 22%;
+                    left: 20%;
+                }
+                .per-5 {
+                    top: 20%;
+                    left: 46%;
                 }
             }
         }
-        &__map{
-            height: 200px;
-            background-size: 100% 200px;
-            .per{
-                position: absolute;
-                width: 30px;
-                height: 30px;
+        .doyou-join {
+            &__title {
+                font-size: 28px;
+                span {
+                    &::after {
+                        height: 5px;
+                    }
+                }
             }
-            .per-1{
-                bottom: 25%;
-                left: 28%;
-            }
-            .per-2{
-                bottom: 43%;
-                left: 11%;
-            }
-            .per-3{
-                top: 40%;
-                left: 38%;
-            }
-            .per-4{
-                top: 22%;
-                left: 20%;
-            }
-            .per-5{
-                top: 20%;
-                left: 46%;
+            &__bee {
+                margin-top: 290px;
+                .bee-left {
+                    flex-basis: 100%;
+                    .line-bee {
+                        width: 80%;
+                    }
+                    .bee {
+                        width: 25%;
+                        top: -70px;
+                        right: 11px;
+                    }
+                }
+                .bee-right {
+                    flex-basis: 100%;
+                    .bee-up {
+                        margin-top: -60px;
+                    }
+                }
             }
         }
-    }
+        footer {
+            .container {
+                .footer-top {
+                    .footer-item {
+                        flex-basis: 100%;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+        
     }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -340,9 +381,9 @@
                 }
             }
         }
-        .looking-all{
+        .looking-all {
             margin-top: 80px;
-            &__title{
+            &__title {
                 font-size: 28px;
                 margin-bottom: 20px;
                 span {
@@ -351,37 +392,78 @@
                     }
                 }
             }
-            &__map{
+            &__map {
                 height: 300px;
                 background-size: 100% 300px;
-                .per{
+                .per {
                     position: absolute;
                     width: 30px;
                     height: 30px;
                 }
-                .per-1{
+                .per-1 {
                     bottom: 25%;
                     left: 28%;
                 }
-                .per-2{
+                .per-2 {
                     bottom: 43%;
                     left: 11%;
                 }
-                .per-3{
+                .per-3 {
                     top: 40%;
                     left: 38%;
                 }
-                .per-4{
+                .per-4 {
                     top: 22%;
                     left: 20%;
                 }
-                .per-5{
+                .per-5 {
                     top: 20%;
                     left: 46%;
                 }
             }
         }
-    
+        .doyou-join {
+            &__title {
+                font-size: 28px;
+                span {
+                    &::after {
+                        height: 5px;
+                    }
+                }
+            }
+            &__bee {
+                margin-top: 290px;
+                .bee-left {
+                    flex-basis: 100%;
+                    .line-bee {
+                        width: 80%;
+                    }
+                    .bee {
+                        width: 15%;
+                        top: -145px;
+                        right: 50px;
+                    }
+                }
+                .bee-right {
+                    flex-basis: 100%;
+                    .bee-up {
+                        margin-top: -60px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .container {
+            .footer-top {
+                .footer-item {
+                    flex-basis: 20%;
+                }
+            }
+            .footer-item-center, .footer-item-right {
+                text-align: center;
+            }
+        }
     }
 }
 @media (min-width: 1024px) and (max-width: 1400px) {
@@ -399,10 +481,6 @@
         .knowdy-careers {
             .knowdy-careers-item {
                 &__box {
-                    .box-right {
-                    }
-                    .box-left-last {
-                    }
                     .item-box {
                         .item-box-right {
                             right: 60px !important;

@@ -556,6 +556,9 @@ main {
                     font-size: 25px;
                     line-height: 29px;
                     padding: 5px 43px;
+                    &:hover {
+                        background: #ff8c08e1;
+                    }
                 }
             }
         }
@@ -566,8 +569,6 @@ main {
             .bee-left{
                 position: relative;
                 flex-basis: 50%;
-                .line-bee{
-                }
                 .bee{
                     position: absolute;
                     top: -110px;
@@ -579,11 +580,6 @@ main {
                 justify-content: space-between;
                 flex-basis: 47%;
                 margin-right: 32px;
-                .bee-right-item{
-                    .icon-bee-small{
-
-                    }
-                }
                 .bee-up{
                     margin-top: -45px;
                 }
