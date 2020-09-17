@@ -88,6 +88,8 @@ main {
             margin-top: 72px;
             .backend-box {
                 display: flex;
+                flex-wrap: wrap;
+
                 margin-bottom: 16px;
 
                 &__item {
@@ -100,6 +102,7 @@ main {
                     margin-right: 16px;
                     background: #ffffff;
                     padding: 6px 17px;
+                    // flex-basis: 50%;
                     .square {
                         width: 12px;
                         height: 12px;
@@ -128,11 +131,16 @@ main {
                 .info-box {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     flex-wrap: wrap;
-                    
+
                     &__item {
-                        flex-basis: 32%;
+                        flex-basis: 23.5%;
                         margin-bottom: 32px;
+                        .img-box {
+                            width: 100%;
+                            height: 260px;
+                        }
                         .item-top {
                             display: flex;
                             align-items: center;
@@ -166,24 +174,208 @@ main {
                                 }
                             }
                         }
-                        .item-bottom{
-                            h3{
-                                a{
-
+                        .item-bottom {
+                            h3 {
+                                margin-top: 22px;
+                                margin-bottom: 10px;
+                                a {
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 23px;
+                                    color: #333333;
                                 }
                             }
-                            .position-time{
-
+                            .position-time,
+                            .tech {
+                                span {
+                                    margin-right: 18px;
+                                }
+                                i {
+                                    color: #828282;
+                                    font-size: 16px;
+                                }
+                                color: #333333;
                             }
-                            .tech{
-
+                            .tech {
+                                margin-top: 22px;
+                                margin-bottom: 20px;
                             }
-                            .btn{
 
-                            } 
-                            .btn-red{
-                                
+                            .btn {
+                                padding: 3px 15px;
+                                border-radius: 50px;
+                                color: #ffffff;
                             }
+                            .btn-red {
+                                background: $color-red;
+                            }
+                            .btn-blue {
+                                background: $color-blue;
+                            }
+                            .btn-pup {
+                                background: $color-pup;
+                            }
+                        }
+                        .box-last {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            span {
+                                font-weight: 900;
+                                font-size: 35px;
+                                line-height: 41px;
+                                color: #ff8b08;
+                                margin-right: 11px;
+                            }
+                            h2 {
+                                font-weight: 900;
+                                font-size: 35px;
+                                line-height: 41px;
+                                color: var(--text-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // knowdy
+
+    .knowdy-careers {
+        margin-top: 100px;
+        margin-left: 32px;
+        margin-right: 32px;
+        &__title {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 76px;
+            text-align: center;
+            color: var(--text-color);
+
+            span {
+                position: relative;
+                z-index: 999;
+                &::after {
+                    content: "";
+                    z-index: -1;
+                    position: absolute;
+                    bottom: -1px;
+                    left: -100px;
+                    height: 8px;
+                    width: 100%;
+                    background-color: $color-main;
+                    animation: runspan 0.5s forwards;
+                }
+            }
+        }
+        .knowdy-careers-item {
+            margin-top: 80px;
+
+            &__box {
+                display: flex;
+                justify-content: space-between;
+                .box-center{
+                    margin-top: 80px;
+                }
+                .box-right{
+                    margin-top: 160px;
+                }
+                .item-box {
+                    flex-basis: 22%;
+                    .item-box-top {
+                        display: flex;
+                        height: 190px;
+                        position: relative;
+
+                        .item-box-left {
+                            max-width: 250px;
+                            .icon-bee {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 8px;
+                                img {
+                                    width: 80%;
+                                }
+                            }
+                            .title {
+                                h3 {
+                                    font-weight: bold;
+                                    font-size: 26px;
+                                    line-height: 30px;
+                                    color: #2c2f50;
+                                }
+                            }
+                        }
+                        .item-box-right {
+                            position: relative;
+                            .personal {
+                                position: absolute;
+                            }
+                            .personal-1,
+                            .personal-2,
+                            .personal-4 {
+                                width: 30px;
+                                height: 30px;
+                            }
+                            .personal-1 {
+                                bottom: 15px;
+                            }
+                            .personal-2 {
+                                bottom: 45px;
+                                left: -18px;
+                            }
+                            .personal-4 {
+                                top: 35px;
+                                left: 30px;
+                            }
+                            .personal-3 {
+                                width: 41px;
+                                height: 41px;
+                                bottom: 45px;
+                                left: 20px;
+                            }
+                            .personal-5 {
+                                width: 49px;
+                                height: 49px;
+                                left: -25px;
+                                top: 20px;
+                            }
+                        }
+                        .square-number {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            position: absolute;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 28px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: #ffdbb1;
+                            color: $color-main;
+                            bottom: -15px;
+                            left: -15px;
+                        }
+                    }
+                    .item-box-bottom {
+                        h3 {
+                            margin-top: 35px;
+                            margin-bottom: 16px;
+                            font-weight: bold;
+                            font-size: 32px;
+                            line-height: 37px;
+                            color: $color-main;
+                        }
+                        p {
+                            color: var(--text-color);
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 23px;
                         }
                     }
                 }
