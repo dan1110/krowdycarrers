@@ -275,11 +275,18 @@ main {
             &__box {
                 display: flex;
                 justify-content: space-between;
+                position: relative;
                 .box-center{
                     margin-top: 80px;
                 }
                 .box-right{
                     margin-top: 160px;
+                }
+                .box-right-last{
+                    margin-right: 46px;
+                }
+                .knowdy-careers-item-double{
+                    margin-top: 150px;
                 }
                 .item-box {
                     flex-basis: 25%;
@@ -345,6 +352,7 @@ main {
                                 top: 20px;
                             }
                         }
+                        
                         .square-number {
                             width: 50px;
                             height: 50px;
@@ -378,6 +386,22 @@ main {
                             line-height: 23px;
                         }
                     }
+                }
+                .img-line{
+                    position: absolute;
+                    width: 80%;
+                    z-index: -5;
+                    
+                }
+                .line-1{
+                    top: -550px;
+                    left: -75px;
+                    width: 35%;
+                    height: 600px;
+                }
+                .line-2{
+                    top: -30px;
+                    left: 350px;
                 }
             }
         }
