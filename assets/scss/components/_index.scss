@@ -255,7 +255,7 @@ main {
 
             span {
                 position: relative;
-                z-index: 999;
+                z-index: 2;
                 &::after {
                     content: "";
                     z-index: -1;
@@ -282,7 +282,7 @@ main {
                     margin-top: 160px;
                 }
                 .item-box {
-                    flex-basis: 22%;
+                    flex-basis: 25%;
                     .item-box-top {
                         display: flex;
                         height: 190px;

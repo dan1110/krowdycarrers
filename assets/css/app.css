@@ -338,7 +338,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 9999999999999999999;
   font-size: 15px;
   color: var(--text-color) !important;
   display: -webkit-box;
@@ -882,7 +882,7 @@ main .knowdy-careers__title {
 
 main .knowdy-careers__title span {
   position: relative;
-  z-index: 999;
+  z-index: 2;
 }
 
 main .knowdy-careers__title span::after {
@@ -920,8 +920,8 @@ main .knowdy-careers .knowdy-careers-item__box .box-right {
 }
 
 main .knowdy-careers .knowdy-careers-item__box .item-box {
-  -ms-flex-preferred-size: 22%;
-      flex-basis: 22%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 
 main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top {
