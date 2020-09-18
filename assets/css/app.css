@@ -1032,6 +1032,11 @@ main .teams-us .teams-info .info-teams .info-box__item .item-bottom h3 a {
   color: #333333;
 }
 
+main .teams-us .teams-info .info-teams .info-box__item .item-bottom h3 a:hover {
+  color: #333333c2;
+  text-decoration: underline;
+}
+
 main .teams-us .teams-info .info-teams .info-box__item .item-bottom .position-time,
 main .teams-us .teams-info .info-teams .info-box__item .item-bottom .tech {
   color: #333333;

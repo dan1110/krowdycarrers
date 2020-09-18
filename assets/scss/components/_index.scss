@@ -303,6 +303,10 @@ main {
                                     font-size: 20px;
                                     line-height: 23px;
                                     color: #333333;
+                                    &:hover{
+                                        color: #333333c2;
+                                        text-decoration: underline;
+                                    }
                                 }
                             }
                             .position-time,
