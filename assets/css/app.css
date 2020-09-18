@@ -119,6 +119,83 @@ ul {
   display: none;
 }
 
+.light .box-white {
+  -webkit-box-shadow: 0px 24px 38px rgba(220, 220, 220, 0.14), 0px 9px 46px rgba(216, 216, 216, 0.12), 0px 11px 15px rgba(221, 221, 221, 0.2);
+          box-shadow: 0px 24px 38px rgba(220, 220, 220, 0.14), 0px 9px 46px rgba(216, 216, 216, 0.12), 0px 11px 15px rgba(221, 221, 221, 0.2);
+}
+
+.light header .nav-mobile .nav-right .toggle-menu .nav-list {
+  background: #ffffffed !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.dark header .nav-mobile .nav-right .toggle-menu .nav-list {
+  background: #070606a9 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+@-webkit-keyframes pulse-me {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-me {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-25px) rotate(0deg);
+            transform: rotate(0deg) translate(-25px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translate(-25px) rotate(-360deg);
+            transform: rotate(360deg) translate(-25px) rotate(-360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-25px) rotate(0deg);
+            transform: rotate(0deg) translate(-25px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translate(-25px) rotate(-360deg);
+            transform: rotate(360deg) translate(-25px) rotate(-360deg);
+  }
+}
+
 @media (max-width: 600px) {
   .dropdown-menu {
     max-width: 300px;
@@ -546,7 +623,15 @@ header .nav-mobile .nav-right .toggle-menu .nav-list .btn-join a:hover {
   display: none;
 }
 
+.light .logo-dark {
+  display: none;
+}
+
 .dark .icon-moon {
+  display: none;
+}
+
+.dark .logo-light {
   display: none;
 }
 
@@ -620,11 +705,122 @@ main #billbroad .container .billbroad-left__sub-title p {
 main #billbroad .container .billbroad-right {
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
+  position: relative;
+  background-image: url(.././images/main/billbroad/mapamundi-billbroad.png);
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  height: 530px;
 }
 
 main #billbroad .container .billbroad-right img {
-  width: 100%;
-  height: auto;
+  position: absolute;
+  width: auto;
+}
+
+main #billbroad .container .billbroad-right .pulse-css {
+  position: relative;
+}
+
+main #billbroad .container .billbroad-right .pulse-css:before, main #billbroad .container .billbroad-right .pulse-css:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: tomato;
+  position: absolute;
+  margin: auto;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-animation: pulse-me 3s linear infinite;
+          animation: pulse-me 3s linear infinite;
+  z-index: -1;
+}
+
+main #billbroad .container .billbroad-right .pulse-css:after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+main #billbroad .container .billbroad-right .top-1 {
+  top: 60px;
+  left: 30px;
+}
+
+main #billbroad .container .billbroad-right .pulse-css-1:before, main #billbroad .container .billbroad-right .pulse-css-1:after {
+  top: 60px;
+  left: 29px;
+}
+
+main #billbroad .container .billbroad-right .top-2 {
+  top: 150px;
+  left: 22%;
+}
+
+main #billbroad .container .billbroad-right .pulse-css-2:before, main #billbroad .container .billbroad-right .pulse-css-2:after {
+  top: 150px;
+  left: 22%;
+}
+
+main #billbroad .container .billbroad-right .top-3 {
+  left: 62%;
+  top: 120px;
+}
+
+main #billbroad .container .billbroad-right .pulse-css-3:before, main #billbroad .container .billbroad-right .pulse-css-3:after {
+  left: 62%;
+  top: 120px;
+}
+
+main #billbroad .container .billbroad-right .top-4 {
+  bottom: 32%;
+  left: 18%;
+}
+
+main #billbroad .container .billbroad-right .pulse-css-4:before, main #billbroad .container .billbroad-right .pulse-css-4:after {
+  top: 324px;
+  left: 19%;
+}
+
+main #billbroad .container .billbroad-right .pulse-css-8:before, main #billbroad .container .billbroad-right .pulse-css-8:after {
+  top: 239px;
+  right: 15%;
+}
+
+main #billbroad .container .billbroad-right .pulse-css-5:before, main #billbroad .container .billbroad-right .pulse-css-5:after {
+  top: 377px;
+  left: 23%;
+}
+
+main #billbroad .container .billbroad-right .pulse-css-6:before, main #billbroad .container .billbroad-right .pulse-css-6:after {
+  top: 271px;
+  left: 30%;
+}
+
+main #billbroad .container .billbroad-right .pulse-css-7:before, main #billbroad .container .billbroad-right .pulse-css-7:after {
+  top: 261px;
+  left: 50.7%;
+}
+
+main #billbroad .container .billbroad-right .top-5 {
+  bottom: 25%;
+  left: 23%;
+}
+
+main #billbroad .container .billbroad-right .top-6 {
+  bottom: 45%;
+  left: 30%;
+}
+
+main #billbroad .container .billbroad-right .top-7 {
+  top: 48%;
+  left: 50%;
+}
+
+main #billbroad .container .billbroad-right .top-8 {
+  top: 45%;
+  right: 15%;
 }
 
 main .teams-us {
@@ -661,6 +857,12 @@ main .teams-us .container .teams-img__box h3 {
 
 main .teams-us .container .teams-img__box img {
   width: 100%;
+  cursor: pointer;
+}
+
+main .teams-us .container .teams-img__box img:hover {
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
 }
 
 main .teams-us .container .teams-img .box-first {
@@ -757,6 +959,8 @@ main .teams-us .teams-info .info-teams .info-box__item {
   -ms-flex-preferred-size: 23.5%;
       flex-basis: 23.5%;
   margin-bottom: 32px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 main .teams-us .teams-info .info-teams .info-box__item .img-box {
@@ -892,6 +1096,11 @@ main .teams-us .teams-info .info-teams .info-box__item .box-last h2 {
   font-size: 35px;
   line-height: 41px;
   color: var(--text-color);
+}
+
+main .teams-us .teams-info .info-teams .info-box__item:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 main .knowdy-careers {
@@ -1076,6 +1285,22 @@ main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top .square-n
   left: -15px;
 }
 
+main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-top .circle {
+  width: 10px;
+  height: 10px;
+  background: #ff8b08;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
+  -webkit-animation: circle 3s linear infinite;
+          animation: circle 3s linear infinite;
+}
+
 main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom h3 {
   margin-top: 35px;
   margin-bottom: 16px;
@@ -1157,6 +1382,7 @@ main .blog .blog-krowdy__item .item-right .characters {
   position: absolute;
   top: -45px;
   left: 20px;
+  z-index: -1;
 }
 
 main .blog .blog-krowdy__item .item-right .characters img {
@@ -1335,9 +1561,10 @@ main .doyou-join__bee .bee-right .bee-upp {
     -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
     margin-top: 0;
+    position: absolute;
   }
   main #billbroad .container .billbroad-left__title h1 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 50px;
     font-weight: 900;
   }
@@ -1345,11 +1572,30 @@ main .doyou-join__bee .bee-right .bee-upp {
     height: 5px;
   }
   main #billbroad .container .billbroad-right {
-    -ms-flex-preferred-size: 100% !important;
-        flex-basis: 100% !important;
-    position: absolute;
-    top: 0%;
-    left: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    background-size: 100% 400px;
+    height: 400px;
+    z-index: -1;
+  }
+  main #billbroad .container .billbroad-right .pulse-css-8:before, main #billbroad .container .billbroad-right .pulse-css-8:after {
+    top: 180px;
+    right: 15%;
+  }
+  main #billbroad .container .billbroad-right .pulse-css-4:before, main #billbroad .container .billbroad-right .pulse-css-4:after {
+    top: 235px;
+  }
+  main #billbroad .container .billbroad-right .pulse-css-5:before, main #billbroad .container .billbroad-right .pulse-css-5:after {
+    top: 278px;
+    left: 23%;
+  }
+  main #billbroad .container .billbroad-right .pulse-css-6:before, main #billbroad .container .billbroad-right .pulse-css-6:after {
+    top: 200px;
+    left: 30%;
+  }
+  main #billbroad .container .billbroad-right .pulse-css-7:before, main #billbroad .container .billbroad-right .pulse-css-7:after {
+    top: 198px;
+    left: 52%;
   }
   main .teams-us {
     margin-top: 30px;
@@ -1379,7 +1625,7 @@ main .doyou-join__bee .bee-right .bee-upp {
   }
   main .teams-us .container .teams-img .box-first h2 {
     font-weight: 900;
-    font-size: 35px;
+    font-size: 28px;
     line-height: 41px;
     margin-bottom: 20px;
   }
@@ -1405,6 +1651,16 @@ main .doyou-join__bee .bee-right .bee-upp {
   }
   main .knowdy-careers__title {
     font-size: 28px;
+  }
+  main .knowdy-careers__title h2 {
+    font-size: 28px;
+    line-height: 43px;
+  }
+  main .knowdy-careers__title h2 span::after {
+    height: 5px;
+  }
+  main .knowdy-careers .knowdy-careers-item {
+    margin-top: 30px;
   }
   main .knowdy-careers .knowdy-careers-item__box .box-center {
     margin-top: 50px;
@@ -1432,10 +1688,10 @@ main .doyou-join__bee .bee-right .bee-upp {
     right: 80px;
   }
   main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom p {
-    font-size: 18px;
+    font-size: 14px;
   }
   main .knowdy-careers .knowdy-careers-item__box .img-line {
     display: none;
@@ -1465,14 +1721,29 @@ main .doyou-join__bee .bee-right .bee-upp {
     margin-top: 60px;
   }
   main .blog .blog-krowdy__item .item-right h3 {
-    font-size: 30px;
+    font-size: 24px;
+  }
+  main .blog .blog-krowdy__item .item-right .characters {
+    top: -16px;
+  }
+  main .blog .blog-krowdy__item .item-right .characters img {
+    width: 80px;
+  }
+  main .blog .blog-krowdy__item .item-right .authour h5 {
+    font-size: 16px;
+  }
+  main .blog .blog-krowdy__item .item-right .authour span {
+    font-size: 14px;
   }
   main .looking-all {
     margin-top: 80px;
   }
   main .looking-all__title {
-    font-size: 28px;
     margin-bottom: 20px;
+  }
+  main .looking-all__title h2 {
+    font-size: 28px;
+    line-height: 47px;
   }
   main .looking-all__title span::after {
     height: 5px;
@@ -1506,11 +1777,15 @@ main .doyou-join__bee .bee-right .bee-upp {
     top: 20%;
     left: 46%;
   }
-  main .doyou-join__title {
+  main .doyou-join__title h2 {
     font-size: 28px;
+    line-height: 47px;
   }
   main .doyou-join__title span::after {
     height: 5px;
+  }
+  main .doyou-join__title .btn-unete a {
+    font-size: 20px;
   }
   main .doyou-join__bee {
     margin-top: 290px;
@@ -1604,7 +1879,7 @@ main .doyou-join__bee .bee-right .bee-upp {
         flex-basis: 47%;
   }
   main .knowdy-careers__title {
-    font-size: 35px;
+    font-size: 28px;
   }
   main .knowdy-careers .knowdy-careers-item__box .box-right {
     margin-top: 0px !important;
@@ -1725,7 +2000,8 @@ main .doyou-join__bee .bee-right .bee-upp {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
   }
-  footer .container .footer-item-center, footer .container .footer-item-right {
+  footer .container .footer-item-center,
+  footer .container .footer-item-right {
     text-align: center;
   }
 }
@@ -1813,7 +2089,7 @@ footer .container .footer-top .footer-item .nav-footer .title h4 {
 footer .container .footer-top .footer-item .nav-footer .title ul li a {
   font-size: 16px;
   line-height: 19px;
-  color: #333333;
+  color: #828282;
 }
 
 footer .container .footer-top .footer-item .nav-footer .title ul li:first-child {

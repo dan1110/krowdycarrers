@@ -42,9 +42,124 @@ main {
             }
             .billbroad-right {
                 flex-basis: 65%;
+                position: relative;
+                background-image: url(.././images/main/billbroad/mapamundi-billbroad.png);
+                background-size: 100% 500px;
+                background-repeat: no-repeat;
+                height: 530px;
                 img {
-                    width: 100%;
-                    height: auto;
+                    position: absolute;
+                    width: auto;
+                }
+                .pulse-css {
+                    position: relative;
+                    &:before,
+                    &:after {
+                        content: "";
+                        @include circle(20px);
+                        background-color: tomato;
+                        position: absolute;
+                        // top: 138px;
+                        // left: 29px;
+                        // bottom: 0;
+                        margin: auto;
+                        transform: scale(0.5);
+                        transform-origin: center center;
+                        animation: pulse-me 3s linear infinite;
+                        z-index: -1;
+                    }
+                    &:after {
+                        animation-delay: 2s;
+                    }
+                }
+
+                .top-1 {
+                    top: 60px;
+                    left: 30px;
+                }
+                .pulse-css-1 {
+                    &:before,
+                    &:after {
+                        top: 60px;
+                        left: 29px;
+                    }
+                }
+                .top-2 {
+                    top: 150px;
+                    left: 22%;
+                }
+                .pulse-css-2 {
+                    &:before,
+                    &:after {
+                        top: 150px;
+                        left: 22%;
+                    }
+                }
+                .top-3 {
+                    left: 62%;
+                    top: 120px;
+                }
+                .pulse-css-3 {
+                    &:before,
+                    &:after {
+                        left: 62%;
+                        top: 120px;
+                    }
+                }
+                .top-4 {
+                    bottom: 32%;
+                    left: 18%;
+                }
+                .pulse-css-4 {
+                    &:before,
+                    &:after {
+                        top: 324px;
+                        left: 19%;
+                    }
+                }
+                .pulse-css-8 {
+                    &:before,
+                    &:after {
+                        top: 239px;
+                        right: 15%;
+                    }
+                }
+                .pulse-css-5 {
+                    &:before,
+                    &:after {
+                        top: 377px;
+                        left: 23%;
+                    }
+                }
+                .pulse-css-6 {
+                    &:before,
+                    &:after {
+                        top: 271px;
+                        left: 30%;
+                    }
+                }
+                .pulse-css-7 {
+                    &:before,
+                    &:after {
+                        top: 261px;
+                        left: 50.7%;
+                    }
+                }
+                .top-5 {
+                    bottom: 25%;
+                    left: 23%;
+                }
+                .top-6 {
+                    bottom: 45%;
+                    left: 30%;
+                }
+                .top-7 {
+                    top: 48%;
+                    left: 50%;
+                }
+                .top-8 {
+                    top: 45%;
+                    right: 15%;
                 }
             }
         }
@@ -70,6 +185,10 @@ main {
                     }
                     img {
                         width: 100%;
+                        cursor: pointer;
+                        &:hover {
+                            filter: opacity(0.8);
+                        }
                     }
                 }
                 .box-first {
@@ -137,6 +256,7 @@ main {
                     &__item {
                         flex-basis: 23.5%;
                         margin-bottom: 32px;
+                        transition: 0.5s;
                         .img-box {
                             width: 100%;
                             height: 260px;
@@ -233,6 +353,9 @@ main {
                                 line-height: 41px;
                                 color: var(--text-color);
                             }
+                        }
+                        &:hover {
+                            transform: translateY(-10px);
                         }
                     }
                 }
@@ -376,6 +499,20 @@ main {
                             bottom: -15px;
                             left: -15px;
                         }
+                        .circle {
+                            width: 10px;
+                            height: 10px;
+                            background: #ff8b08;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            overflow: hidden;
+                            margin: auto;
+                            animation: circle 3s linear infinite;
+                        }
                     }
                     .item-box-bottom {
                         h3 {
@@ -408,7 +545,6 @@ main {
                 .line-2 {
                     bottom: 85px;
                     left: 220px;
-                    
                 }
             }
         }
@@ -445,6 +581,7 @@ main {
                         position: absolute;
                         top: -45px;
                         left: 20px;
+                        z-index: -1;
                         img {
                             width: 134px;
                         }
@@ -562,28 +699,28 @@ main {
                 }
             }
         }
-        &__bee{
+        &__bee {
             display: flex;
             flex-wrap: wrap;
             margin-top: 290px;
-            .bee-left{
+            .bee-left {
                 position: relative;
                 flex-basis: 50%;
-                .bee{
+                .bee {
                     position: absolute;
                     top: -110px;
                     right: 36px;
                 }
             }
-            .bee-right{
+            .bee-right {
                 display: flex;
                 justify-content: space-between;
                 flex-basis: 47%;
                 margin-right: 32px;
-                .bee-up{
+                .bee-up {
                     margin-top: -45px;
                 }
-                .bee-upp{
+                .bee-upp {
                     margin-top: -65px;
                 }
             }

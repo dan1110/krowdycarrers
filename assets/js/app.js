@@ -6,24 +6,31 @@ const themeLight = 'light';
 const body = document.getElementsByTagName('body')[0];
 const switchThemeDarkPC = document.querySelector('#switch-theme-pc');
 const switchThemeDarkMobile = document.querySelector('#switch-theme-mobile');
-
+const logoDark = document.querySelector('.logo-dark');
+const logoLight = document.querySelector('.logo-light');
 
 
 
 function switchThem() {
     let childSun = this.querySelector('.icon-sun');
     let childMoon = this.querySelector('.icon-moon');
+
+    console.log(logoDark);
     if (body.classList.contains(themeLight)) {
         body.classList.remove(themeLight);
         body.classList.add(themeDark);
         childSun.classList.remove('hide');
         childMoon.classList.add('hide');
-        setCookie(themeCookieName,themeDark);
+        logoLight.classList.add('hide');
+        logoDark.classList.remove('hide');
+        setCookie(themeCookieName, themeDark);
     } else {
         body.classList.remove(themeDark);
         body.classList.add(themeLight);
         childMoon.classList.remove('hide');
         childSun.classList.add('hide');
+        logoDark.classList.add('hide');
+        logoLight.classList.remove('hide');
         setCookie(themeCookieName, themeLight);
     }
 }
@@ -54,6 +61,7 @@ const loadTheme = () => {
     let theme = getCookie(themeCookieName)
     console.log(theme);
     body.classList.add(theme === "" ? themeDark : theme)
+    // logoDark.classList.remove('hide');
 }
 
 

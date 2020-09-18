@@ -151,9 +151,16 @@ header {
     .icon-sun{
         display: none;
     }
+    
+    .logo-dark{
+        display: none;
+    }
 }
 .dark{
     .icon-moon{
+        display: none;
+    }
+    .logo-light{
         display: none;
     }
 }

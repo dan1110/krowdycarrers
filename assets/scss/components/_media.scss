@@ -6,9 +6,10 @@
                 .billbroad-left {
                     flex-basis: 100% !important;
                     margin-top: 0;
+                    position: absolute;
                     &__title {
                         h1 {
-                            font-size: 30px;
+                            font-size: 28px;
                             line-height: 50px;
                             font-weight: 900;
                             span {
@@ -20,10 +21,44 @@
                     }
                 }
                 .billbroad-right {
-                    flex-basis: 100% !important;
-                    position: absolute;
-                    top: 0%;
-                    left: 0;
+                    flex-basis: 100%;
+                    background-size: 100% 400px;
+                    height: 400px;
+                    z-index: -1;
+                    .pulse-css-8 {
+                        &:before,
+                        &:after {
+                            top: 180px;
+                            right: 15%;
+                        }
+                    }
+                    .pulse-css-4 {
+                        &:before,
+                        &:after {
+                            top: 235px;
+                        }
+                    }
+                    .pulse-css-5 {
+                        &:before,
+                        &:after {
+                            top: 278px;
+                            left: 23%;
+                        }
+                    }
+                    .pulse-css-6 {
+                        &:before,
+                        &:after {
+                            top: 200px;
+                            left: 30%;
+                        }
+                    }
+                    .pulse-css-7 {
+                        &:before,
+                        &:after {
+                            top: 198px;
+                            left: 52%;
+                        }
+                    }
                 }
             }
         }
@@ -49,7 +84,7 @@
                         align-items: center;
                         h2 {
                             font-weight: 900;
-                            font-size: 35px;
+                            font-size: 28px;
                             line-height: 41px;
                             margin-bottom: 20px;
                         }
@@ -82,8 +117,18 @@
             // margin-right: 32px;
             &__title {
                 font-size: 28px;
+                h2 {
+                    font-size: 28px;
+                    line-height: 43px;
+                    span {
+                        &::after {
+                            height: 5px;
+                        }
+                    }
+                }
             }
             .knowdy-careers-item {
+                margin-top: 30px;
                 &__box {
                     .box-center {
                         margin-top: 50px;
@@ -114,10 +159,10 @@
                         }
                         .item-box-bottom {
                             h3 {
-                                font-size: 30px;
+                                font-size: 25px;
                             }
                             p {
-                                font-size: 18px;
+                                font-size: 14px;
                             }
                         }
                     }
@@ -147,7 +192,21 @@
                         flex-basis: 100%;
                         margin-top: 60px;
                         h3 {
-                            font-size: 30px;
+                            font-size: 24px;
+                        }
+                        .characters {
+                            top: -16px;
+                            img {
+                                width: 80px;
+                            }
+                        }
+                        .authour {
+                            h5 {
+                                font-size: 16px;
+                            }
+                            span {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -156,8 +215,11 @@
         .looking-all {
             margin-top: 80px;
             &__title {
-                font-size: 28px;
                 margin-bottom: 20px;
+                h2 {
+                    font-size: 28px;
+                    line-height: 47px;
+                }
                 span {
                     &::after {
                         height: 5px;
@@ -196,10 +258,18 @@
         }
         .doyou-join {
             &__title {
-                font-size: 28px;
+                h2 {
+                    font-size: 28px;
+                    line-height: 47px;
+                }
                 span {
                     &::after {
                         height: 5px;
+                    }
+                }
+                .btn-unete{
+                    a{
+                        font-size: 20px;
                     }
                 }
             }
@@ -234,7 +304,6 @@
                 }
             }
         }
-        
     }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -323,7 +392,7 @@
         }
         .knowdy-careers {
             &__title {
-                font-size: 35px;
+                font-size: 28px;
             }
             .knowdy-careers-item {
                 &__box {
@@ -460,7 +529,8 @@
                     flex-basis: 20%;
                 }
             }
-            .footer-item-center, .footer-item-right {
+            .footer-item-center,
+            .footer-item-right {
                 text-align: center;
             }
         }
