@@ -1308,6 +1308,13 @@ main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom h3 {
   font-size: 32px;
   line-height: 37px;
   color: var(--text-title-color);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom h3:hover {
+  color: #f7b272;
 }
 
 main .knowdy-careers .knowdy-careers-item__box .item-box .item-box-bottom p {
@@ -1448,9 +1455,60 @@ main .looking-all__map .per {
   height: 30px;
 }
 
+main .looking-all__map .pulse-css {
+  position: relative;
+}
+
+main .looking-all__map .pulse-css:before, main .looking-all__map .pulse-css:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: tomato;
+  position: absolute;
+  margin: auto;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-animation: pulse-me 3s linear infinite;
+          animation: pulse-me 3s linear infinite;
+  z-index: -1;
+}
+
+main .looking-all__map .pulse-css:after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
 main .looking-all__map .per-1 {
   bottom: 25%;
   left: 28%;
+}
+
+main .looking-all__map .pulse-css-l1:before, main .looking-all__map .pulse-css-l1:after {
+  top: 350px;
+  left: 28.3%;
+}
+
+main .looking-all__map .pulse-css-l2:before, main .looking-all__map .pulse-css-l2:after {
+  top: 259px;
+  left: 31.3%;
+}
+
+main .looking-all__map .pulse-css-l3:before, main .looking-all__map .pulse-css-l3:after {
+  top: 128px;
+  left: 28.3%;
+}
+
+main .looking-all__map .pulse-css-l4:before, main .looking-all__map .pulse-css-l4:after {
+  top: 113px;
+  left: 20.3%;
+}
+
+main .looking-all__map .pulse-css-l5:before, main .looking-all__map .pulse-css-l5:after {
+  top: 104px;
+  left: 46.3%;
 }
 
 main .looking-all__map .per-2 {
@@ -1777,6 +1835,26 @@ main .doyou-join__bee .bee-right .bee-upp {
     top: 20%;
     left: 46%;
   }
+  main .looking-all__map .pulse-css-l1:before, main .looking-all__map .pulse-css-l1:after {
+    top: 126px;
+    left: 28.3%;
+  }
+  main .looking-all__map .pulse-css-l2:before, main .looking-all__map .pulse-css-l2:after {
+    top: 89px;
+    left: 11.7%;
+  }
+  main .looking-all__map .pulse-css-l3:before, main .looking-all__map .pulse-css-l3:after {
+    top: 85px;
+    left: 39%;
+  }
+  main .looking-all__map .pulse-css-l4:before, main .looking-all__map .pulse-css-l4:after {
+    top: 47px;
+    left: 20.8%;
+  }
+  main .looking-all__map .pulse-css-l5:before, main .looking-all__map .pulse-css-l5:after {
+    top: 45px;
+    left: 46.3%;
+  }
   main .doyou-join__title h2 {
     font-size: 28px;
     line-height: 47px;
@@ -1968,6 +2046,26 @@ main .doyou-join__bee .bee-right .bee-upp {
     top: 20%;
     left: 46%;
   }
+  main .looking-all__map .pulse-css-l1:before, main .looking-all__map .pulse-css-l1:after {
+    top: 199px;
+    left: 28.3%;
+  }
+  main .looking-all__map .pulse-css-l2:before, main .looking-all__map .pulse-css-l2:after {
+    top: 146px;
+    left: 11.6%;
+  }
+  main .looking-all__map .pulse-css-l3:before, main .looking-all__map .pulse-css-l3:after {
+    top: 126px;
+    left: 38.5%;
+  }
+  main .looking-all__map .pulse-css-l4:before, main .looking-all__map .pulse-css-l4:after {
+    top: 71px;
+    left: 20.8%;
+  }
+  main .looking-all__map .pulse-css-l5:before, main .looking-all__map .pulse-css-l5:after {
+    top: 64px;
+    left: 46.8%;
+  }
   main .doyou-join__title {
     font-size: 28px;
   }
@@ -2090,6 +2188,10 @@ footer .container .footer-top .footer-item .nav-footer .title ul li a {
   font-size: 16px;
   line-height: 19px;
   color: #828282;
+}
+
+footer .container .footer-top .footer-item .nav-footer .title ul li a:hover {
+  color: rgba(253, 208, 83, 0.575);
 }
 
 footer .container .footer-top .footer-item .nav-footer .title ul li:first-child {

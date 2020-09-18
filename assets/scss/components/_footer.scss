@@ -33,6 +33,9 @@ footer {
                                     font-size: 16px;
                                     line-height: 19px;
                                     color: #828282;
+                                    &:hover{
+                                        color: rgba(253, 208, 83, 0.575);
+                                    }
                                 }
                                 &:first-child {
                                     margin-top: 32px;

@@ -522,6 +522,11 @@ main {
                             font-size: 32px;
                             line-height: 37px;
                             color: var(--text-title-color);
+                            cursor: pointer;
+                            transition: 0.3s;
+                            &:hover {
+                                color: rgb(247, 178, 114);
+                            }
                         }
                         p {
                             color: var(--text-color);
@@ -641,9 +646,63 @@ main {
                 width: 30px;
                 height: 30px;
             }
+            .pulse-css {
+                position: relative;
+                &:before,
+                &:after {
+                    content: "";
+                    @include circle(20px);
+                    background-color: tomato;
+                    position: absolute;
+                    margin: auto;
+                    transform: scale(0.5);
+                    transform-origin: center center;
+                    animation: pulse-me 3s linear infinite;
+                    z-index: -1;
+                }
+                &:after {
+                    animation-delay: 2s;
+                }
+            }
             .per-1 {
                 bottom: 25%;
                 left: 28%;
+                // animation: pulse-me 0.5s infinite;
+            }
+            .pulse-css-l1 {
+                &:before,
+                &:after {
+                    top: 350px;
+                    left: 28.3%;
+                }
+            }
+            .pulse-css-l2 {
+                &:before,
+                &:after {
+                    top: 259px;
+                    left: 31.3%;
+                }
+            }
+            .pulse-css-l3 {
+                &:before,
+                &:after {
+                    top: 128px;
+                    left: 28.3%;
+                }
+            }
+            .pulse-css-l4 {
+                &:before,
+                &:after {
+                    top: 113px;
+                    left: 20.3%;
+                }
+            }
+            .pulse-css-l5 {
+                &:before,
+                &:after {
+                    top: 104px;
+                    left: 46.3%;
+                }
             }
             .per-2 {
                 bottom: 43%;

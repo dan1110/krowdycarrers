@@ -254,6 +254,41 @@
                     top: 20%;
                     left: 46%;
                 }
+                .pulse-css-l1 {
+                    &:before,
+                    &:after {
+                        top: 126px;
+                        left: 28.3%;
+                    }
+                }
+                .pulse-css-l2 {
+                    &:before,
+                    &:after {
+                        top: 89px;
+                        left: 11.7%;
+                    }
+                }
+                .pulse-css-l3 {
+                    &:before,
+                    &:after {
+                        top: 85px;
+                        left: 39%;
+                    }
+                }
+                .pulse-css-l4 {
+                    &:before,
+                    &:after {
+                        top: 47px;
+                        left: 20.8%;
+                    }
+                }
+                .pulse-css-l5 {
+                    &:before,
+                    &:after {
+                        top: 45px;
+                        left: 46.3%;
+                    }
+                }
             }
         }
         .doyou-join {
@@ -267,8 +302,8 @@
                         height: 5px;
                     }
                 }
-                .btn-unete{
-                    a{
+                .btn-unete {
+                    a {
                         font-size: 20px;
                     }
                 }
@@ -488,6 +523,41 @@
                 .per-5 {
                     top: 20%;
                     left: 46%;
+                }
+                .pulse-css-l1 {
+                    &:before,
+                    &:after {
+                        top: 199px;
+                        left: 28.3%;
+                    }
+                }
+                .pulse-css-l2 {
+                    &:before,
+                    &:after {
+                        top: 146px;
+                        left: 11.6%;
+                    }
+                }
+                .pulse-css-l3 {
+                    &:before,
+                    &:after {
+                        top: 126px;
+                        left: 38.5%;
+                    }
+                }
+                .pulse-css-l4 {
+                    &:before,
+                    &:after {
+                        top: 71px;
+                        left: 20.8%;
+                    }
+                }
+                .pulse-css-l5 {
+                    &:before,
+                    &:after {
+                        top: 64px;
+                        left: 46.8%;
+                    }
                 }
             }
         }
